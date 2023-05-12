@@ -16,7 +16,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -108,10 +108,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Nithish Raina
+                  Phillip Shatkin
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  Dev 
+                  Owner
                 </Typography>
               </Box>
             </Box>
@@ -134,7 +134,7 @@ const Sidebar = () => {
               Data
             </Typography>
             <Item
-              title="Manage Team"
+              title="Manage Users"
               to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
@@ -148,7 +148,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Invoices Balances"
+              title="Payment Balances"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
